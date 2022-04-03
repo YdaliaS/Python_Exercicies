@@ -1,13 +1,26 @@
 class Trabajador(): # Clase "Trabajador"
     def __init__(self):
         self.trabajador = None
-        self.categoria = None
-        self.horas_extras = None
-        self.tardanzas = None
 
     #Metodos
-    def ObtenerDatos(self): # Metodo "ObtenerDatos"
+    def ObtenerDatosT(self): # Metodo "ObtenerDatos"
+        print("__________________________________")
+        print("      ______________________      ")
+        print("     |                      |     ")
+        print("     |    FERROTEK  S.A.C   |     ")
+        print("     |______________________|     ")
+        print("                                  ")
+        print("      *** DATOS DE ENTRADA ***    ")
+        print("                                  ")
         self.trabajador = input("TRABAJADOR:                ")
-        self.categoria = input("CATEGORIA:                 ")
-        self.horas_extras = float(input("HORAS EXTRAS:              "))
-        self.tardanzas = float(input("TARDANZAS: (minutos)       "))
+
+    def Imprimir(self):
+        print("__________________________________")
+        print("      ______________________      ")
+        print("     |                      |     ")
+        print("     |    FERROTEK  S.A.C   |     ")
+        print("     |______________________|     ")
+        print("                                  ")
+        print("      *** DATOS DE ENTRADA ***    ")
+        print("                                  ")
+        print("    NOMBRE:              ",self.trabajador)
